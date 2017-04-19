@@ -1,12 +1,10 @@
-#[Curriculum Vitae](https://github.com/garciparedes/CV/raw/master/cv-sergio-garciaprado.pdf)
+# [Curriculum Vitae](https://github.com/garciparedes/CV/raw/master/cv-sergio-garciaprado.pdf)
 
 
-# About
-Latest version of my CV, typesetted in Helvetica and using colors inspired by Monokai (there is an `print` option which renders in black and white, and reverts the header to dark on light, if printing on paper is needed).
-
-Uses TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biblatex to print my publications and textpos for the aside.
-
-
+## Authors
+  - García Prado, Sergio: [@garciparedes](http://garciparedes.me)
+  - Friggeri, Adrien
+  
 # License
 
 Copyright (C) 2012, Adrien Friggeri
@@ -17,5 +15,6 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+
 ## Like it? Awesome!
-If you find this tool useful, consider supporting or [buying me a beer](https://www.paypal.me/garciparedes/2):)
+If you find this tool useful, consider supporting or [buying me a beer](https://www.paypal.me/garciparedes/2) 🙂
