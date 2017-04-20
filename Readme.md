@@ -1,4 +1,4 @@
-# [Curriculum Vitae](http://nbviewer.jupyter.org/github/garciparedes/CV/blob/master/garciparedes-cv.pdf)
+# [Curriculum Vitae](http://nbviewer.jupyter.org/github/garciparedes/cv/blob/master/garciparedes-cv.pdf)
 
 
 ## Authors
