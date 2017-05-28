@@ -48,7 +48,7 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage[math-style=TeX]{unicode-math}
 
 \newfontfamily\bodyfont[]{Helvetica Neue}
 \newfontfamily\thinfont[]{Helvetica Neue UltraLight}
@@ -96,16 +96,7 @@
 \newcounter{colorCounter}
 \def\@sectioncolor#1#2#3{%
   {%
-    \color{%
-      \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
-        orange\or%
-        green\or%
-        purple\or%
-        brown\else%
-        headercolor\fi%
-    } #1#2#3%
+    \color{gray} #1#2#3%
   }%
   \stepcounter{colorCounter}%
 }
@@ -166,7 +157,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{4}(1, 4.33)
+  \begin{textblock}{4}(0.25, 4.33)
   \begin{flushright}
   \obeycr
 }{%
