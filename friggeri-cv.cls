@@ -133,7 +133,7 @@
 
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
-  \begin{longtable}{@{\extracolsep{\fill}}p{2cm}l}
+  \begin{longtable}{@{\extracolsep{\fill}}p{2.5cm}l}
 }{%
   \end{longtable}
 }
