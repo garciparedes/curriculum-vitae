@@ -129,11 +129,13 @@
 % List environment %
 %%%%%%%%%%%%%%%%%%%%
 
+\usepackage{longtable}
+
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{longtable}{@{\extracolsep{\fill}}p{2cm}l}
 }{%
-  \end{tabular*}
+  \end{longtable}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
