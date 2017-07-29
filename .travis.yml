@@ -1,7 +1,7 @@
 sudo: required
 dist: trusty
 before_install:
-  - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
+  - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-xetex
 script:
   - mkdir _build
   - xelatex -interaction=nonstopmode -halt-on-error -output-directory _build garciparedes-cv.tex
@@ -10,6 +10,5 @@ deploy:
   provider: releases
   file:
     - _build/garciparedes-cv.pdf
-  skip_cleanup: true
   on:
     tags: true
