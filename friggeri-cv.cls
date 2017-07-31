@@ -160,7 +160,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{4}(0.25, 4.33)
+  \begin{textblock}{4}(0.25, 4.25)
   \begin{flushright}
   \obeycr
 }{%
@@ -308,7 +308,7 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=5.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=5.1cm,top=2cm,right=1.5cm,bottom=1.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
     colorlinks=false,
