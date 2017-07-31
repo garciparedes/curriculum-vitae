@@ -2,12 +2,13 @@ sudo: required
 dist: trusty
 before_install:
   - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-xetex lmodern texlive-math-extra xzdec
+  - tlmgr option repository ftp://tug.org/historic/systems/texlive/2015/tlnet-final 
   - tlmgr init-usertree
-  - sudo tlmgr update --self
-  - sudo tlmgr update --all
-  - sudo tlmgr update biblatex
-  - sudo tlmgr update fontawesome
-  - sudo tlmgr update xcolor
+  - tlmgr update --self
+  - tlmgr update --all
+  - tlmgr update biblatex
+  - tlmgr update fontawesome
+  - tlmgr update xcolor
 script:
   - mkdir _build
   - xelatex -interaction=nonstopmode -halt-on-error -output-directory _build garciparedes-cv.tex
