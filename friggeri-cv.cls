@@ -50,12 +50,13 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX]{unicode-math}
 
-\newfontfamily\bodyfont[]{Helvetica Neue}
-\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
-\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+\newfontfamily\bodyfont[Path=fonts/]{Roboto-Regular}
+\newfontfamily\thinfont[Path=fonts/]{Roboto-Thin}
+\newfontfamily\headingfont[Path=fonts/]{Roboto-Medium}
+\newfontfamily\positionfont[Path=fonts/]{Roboto-LightItalic}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
+\setmainfont[Path=fonts/,Mapping=tex-text, Color=textcolor]{Roboto-Light}
 
 %\setmathfont{XITS Math}
 
