@@ -1,10 +1,10 @@
 sudo: required
 dist: trusty
 before_install:
-  - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-xetex latex-xcolor lmodern texlive-math-extra xzdec
+  - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-xetex lmodern texlive-math-extra xzdec
   - tlmgr init-usertree
-  - sudo tlmgr update --all
   - sudo tlmgr update --self
+  - sudo tlmgr update --all
   - sudo tlmgr update biblatex
   - sudo tlmgr update fontawesome
   - sudo tlmgr update xcolor
