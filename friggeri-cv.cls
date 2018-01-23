@@ -309,7 +309,7 @@
 %%%%%%%%%%%%%%%%
 
 \RequirePackage[left=4.9cm,top=2cm,right=1.5cm,bottom=1.5cm,nohead,nofoot]{geometry}
-\RequirePackage{hyperref}
+\RequirePackage[hidelinks]{hyperref}
 \hypersetup{
     colorlinks=false,
     linkcolor=red,
