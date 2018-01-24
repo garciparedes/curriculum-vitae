@@ -308,7 +308,7 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=2.25cm,top=2cm,right=2.25cm,bottom=1.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=2.25cm,top=2cm,right=2.25cm,bottom=1.5cm,nofoot]{geometry}
 \RequirePackage[hidelinks]{hyperref}
 \hypersetup{
     colorlinks=false,
