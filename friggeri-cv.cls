@@ -139,13 +139,15 @@
   \end{longtable}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
-\newcommand{\entry}[4]{%
-  #1&\parbox[t]{11.8cm}{%
-    \textbf{#2}%
+
+\newcommand{\entry}[5][]{%
+  #2&\parbox[t]{11.8cm}{%
+    \textbf{#3}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{\parsep}%
-  }\\}
+    {\footnotesize\addfontfeature{Color=lightgray} #4}\\%
+    #5\vspace{\parsep}%
+  }\\
+}
 
 
 %%%%%%%%%%%%%%
