@@ -141,7 +141,13 @@
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 
 \newcommand{\entry}[5][]{%
-  #2&\parbox[t]{11.8cm}{%
+  #2&\parbox[t]{2cm}{%
+    \if\relax\detokenize{#1}\relax
+      missing
+    \else
+      \includegraphics[width = 0.75cm]{#1}
+    \fi\\
+  }\parbox[t]{11.8cm}{
     \textbf{#3}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #4}\\%
