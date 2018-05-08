@@ -1,4 +1,4 @@
-# [Curriculum Vitae](https://garciparedes.me/curriculum-vitae/garciparedes-cv.pdf)
+# [Curriculum Vitae](https://garciparedes.me/curriculum-vitae)
 
 ## Authors
   - García Prado, Sergio: [@garciparedes](http://garciparedes.me)
