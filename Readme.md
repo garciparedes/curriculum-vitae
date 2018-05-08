@@ -1,4 +1,4 @@
-# [Curriculum Vitae](https://nbviewer.jupyter.org/github/garciparedes/curriculum-vitae/blob/master/garciparedes-cv.pdf)
+# [Curriculum Vitae](https://garciparedes.me/curriculum-vitae/garciparedes-cv.pdf)
 
 ## Authors
   - García Prado, Sergio: [@garciparedes](http://garciparedes.me)
