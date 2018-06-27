@@ -1,21 +1,30 @@
 sudo: required
 dist: trusty
-before_install:
-  - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-xetex lmodern texlive-math-extra xzdec
-  - tlmgr init-usertree
-  - tlmgr update --self
-  - tlmgr update --all
-  - tlmgr update biblatex
-  - tlmgr update fontawesome
-  - tlmgr update xcolor
-script:
-  - mkdir _build
-  - xelatex -interaction=nonstopmode -halt-on-error -output-directory _build garciparedes-cv.tex
+install:
+  # Silent install from conda docs
+  # https://conda.io/docs/user-guide/install/macos.html#install-macos-silent
+  # adapted using
+  # https://conda.io/docs/user-guide/tasks/use-conda-with-travis-ci.html
 
-deploy:
-  provider: releases
-  file:
-    - _build/garciparedes-cv.pdf
-  skip_cleanup: true
-  on:
-    tags: true
+  # Needed to check if conda already installed
+  - export PATH="$HOME/miniconda/bin:$PATH"
+
+  # If not yet installed, obtain Miniconda
+  # and tectonic
+  # From tectonic docs
+  # https://tectonic-typesetting.github.io/en-US/install.html#the-anaconda-method
+  - if ! command -v conda > /dev/null; then
+      wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+      bash miniconda.sh -b -p $HOME/miniconda -u;
+      conda config --add channels conda-forge;
+      conda config --set always_yes yes;
+      conda update --all;
+      conda install tectonic;
+    fi
+  - conda info -a
+cache:
+  directories:
+    - $HOME/miniconda
+    - $HOME/.cache/Tectonic
+script:
+ - tectonic ./garciparedes-cv.tex --print
