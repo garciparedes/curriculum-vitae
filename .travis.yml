@@ -12,11 +12,16 @@ addons:
     - texlive-fonts-recommended
     - texlive-fonts-extra
     - texlive-pictures
+    - texlive-bibtex-extra 
+    - texlive-math-extra
+    - biber
     - latex-xcolor
     - lmodern
     - dvipng
-    - texlive-math-extra
     - pgf
+
+cache:
+  apt: true
 
 script:
   - mkdir _build
