@@ -8,7 +8,7 @@ before_install:
 
 script:
   - mkdir _build
-  - pdflatex -interaction=nonstopmode -halt-on-error output-directory _build garciparedes-cv.tex
+  - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build garciparedes-cv.tex
 
 deploy:
   provider: releases
