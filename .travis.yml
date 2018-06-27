@@ -16,6 +16,7 @@ addons:
     - lmodern
     - dvipng
     - texlive-math-extra
+    - pgf
 
 script:
   - mkdir _build
