@@ -16,6 +16,10 @@ addons:
 cache:
   apt: true
 
+
+before_script:
+  - tlmgr update --self --all
+
 script:
   - mkdir _build
   - xelatex -interaction=nonstopmode -halt-on-error -output-directory _build garciparedes-cv.tex
