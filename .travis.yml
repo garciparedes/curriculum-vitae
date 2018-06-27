@@ -11,6 +11,8 @@ addons:
     - libharfbuzz-dev
     - libicu-dev
     - zlib1g-dev
+    - rustc
+    - cargo
 
 
 cache:
