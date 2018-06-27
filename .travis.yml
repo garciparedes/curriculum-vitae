@@ -4,11 +4,11 @@ dist: trusty
 
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y --no-install-recommends texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra latex-xcolor lmodern dvipng
+  - sudo apt-get install -y --no-install-recommends texlive-xetex texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra latex-xcolor lmodern dvipng
 
 script:
   - mkdir _build
-  - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build garciparedes-cv.tex
+  - xelatex -interaction=nonstopmode -halt-on-error -output-directory _build garciparedes-cv.tex
 
 deploy:
   provider: releases
