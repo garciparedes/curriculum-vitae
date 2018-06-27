@@ -6,31 +6,23 @@ addons:
   apt:
     update: true
     packages:
-    - texlive-xetex
-    - texlive-latex-recommended
-    - texlive-latex-extra
-    - texlive-fonts-recommended
-    - texlive-fonts-extra
-    - texlive-pictures
-    - texlive-bibtex-extra
-    - texlive-math-extra
-    - biber
-    - latex-xcolor
-    - lmodern
-    - dvipng
-    - pgf
+    - libfontconfig1-dev
+    - libgraphite2-dev
+    - libharfbuzz-dev
+    - libicu-dev
+    - zlib1g-dev
+
 
 cache:
   apt: true
 
 
 before_script:
-  - tlmgr init-usertree
-  - tlmgr update --self --all
+  - cargo install tectonic
 
 script:
   - mkdir _build
-  - xelatex -interaction=nonstopmode -halt-on-error -output-directory _build garciparedes-cv.tex
+  - tectonic -output-directory _build garciparedes-cv.tex
 
 deploy:
   provider: releases
