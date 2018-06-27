@@ -2,6 +2,10 @@ sudo: required
 
 dist: trusty
 
+language: rust
+
+cache: cargo
+
 addons:
   apt:
     update: true
@@ -10,13 +14,10 @@ addons:
     - libgraphite2-dev
     - libharfbuzz-dev
     - libicu-dev
-    - zlib1g-dev
-    - rustc
-    - cargo
 
 
-cache:
-  apt: true
+
+
 
 
 before_script:
