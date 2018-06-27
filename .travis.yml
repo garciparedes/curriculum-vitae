@@ -25,7 +25,8 @@ cache:
 
 
 before_script:
-  - tlmgr update --all
+  - tlmgr init-usertree
+  - tlmgr update --self --all
 
 script:
   - mkdir _build
