@@ -2,9 +2,20 @@ sudo: required
 
 dist: trusty
 
-before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y --no-install-recommends texlive-xetex texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra latex-xcolor lmodern dvipng texlive-math-extra
+addons:
+  apt:
+    update: true
+    packages:
+    - texlive-xetex
+    - texlive-latex-recommended
+    - texlive-latex-extra
+    - texlive-fonts-recommended
+    - texlive-fonts-extra
+    - texlive-pictures
+    - latex-xcolor
+    - lmodern
+    - dvipng
+    - texlive-math-extra
 
 script:
   - mkdir _build
