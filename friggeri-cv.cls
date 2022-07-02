@@ -84,7 +84,7 @@
       \thinfont #3%
     };
   \end{tikzpicture}
-  \vspace{2.5cm}
+  \vspace{2.3cm}
   \vspace{-2\parskip}
 }
 
@@ -134,19 +134,19 @@
 
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
-  \begin{longtable}{@{\extracolsep{\fill}}p{3.2cm}l}
+  \begin{longtable}{@{\extracolsep{\fill}}p{3.5cm}l}
 }{%
   \end{longtable}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 
 \newcommand{\entry}[5][]{%
-  #2&\parbox[t]{11.8cm}{%
+  #2&\parbox[t]{15cm}{%
     \textbf{#3}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #4}\\%
+    {\footnotesize\addfontfeature{Color=lightgray} #4}\\
     #5\vspace{\parsep}%
-  }\\
+  }\\\\
 }
 
 
@@ -310,7 +310,7 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=2.25cm,top=2cm,right=2.25cm,bottom=1.25cm,nofoot]{geometry}
+\RequirePackage[left=1.5cm,top=2cm,right=1.5cm,bottom=1cm,nofoot]{geometry}
 \RequirePackage[hidelinks]{hyperref}
 \hypersetup{
     colorlinks=false,
