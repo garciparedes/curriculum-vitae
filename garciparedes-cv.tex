@@ -11,18 +11,13 @@
 \newcommand{\important}[1]{\textbf{\mbox{#1}}}
 \newcommand{\importanthref}[2]{\myhref{#1}{\textbf{\mbox{#1}}}}
 
-\newcommand{\AWS}{\myhref{https://aws.amazon.com/}{Amazon Web Services (AWS)}}
-\newcommand{\Clariteia}{\myhref{https://www.clariteia.com/}{Clariteia}}
-\newcommand{\Minos}{\myhref{https://github.com/minos-framework/minos-python}{Minos Framework}}
-\newcommand{\Unlimiteck}{\myhref{https://unlimiteck.com/}{Unlimiteck Company Builder}}
-\newcommand{\UNIBO}{\myhref{https://www.unibo.it/en}{Università di Bologna}}
-\newcommand{\UVa}{\myhref{http://www.uva.es}{University of Valladolid}}
-\newcommand{\Brooktec}{\myhref{https://brooktec.com/}{Brooktec}}
-\newcommand{\EvaluaMe}{\myhref{https://play.google.com/store/apps/details?id=com.garciparedes.evaluame}{EvaluaMe}}
-\newcommand{\TFGraph}{\myhref{https://github.com/tfgraph}{TFGraph}}
-\newcommand{\ngkatex}{\myhref{https://github.com/garciparedes/ng-katex}{ng-katex}}
-\newcommand{\jinete}{\myhref{https://github.com/garciparedes/jinete}{jinete}}
-\newcommand{\helpacket}{\myhref{https://github.com/helpacket}{Helpacket}}
+\newcommand{\AWS}{\myhref{https://aws.amazon.com/}{\textbf{Amazon Web Services (AWS)}}}
+\newcommand{\Clariteia}{\myhref{https://www.clariteia.com/}{\textbf{Clariteia}}}
+\newcommand{\Minos}{\myhref{https://github.com/minos-framework/minos-python}{\textbf{Minos}}}
+\newcommand{\Unlimiteck}{\myhref{https://unlimiteck.com/}{\textbf{Unlimiteck Company Builder}}}
+\newcommand{\UNIBO}{\myhref{https://www.unibo.it/en}{\textbf{Università di Bologna}}}
+\newcommand{\UVa}{\myhref{https://www.uva.es}{\textbf{University of Valladolid}}}
+\newcommand{\Brooktec}{\myhref{https://brooktec.com/}{\textbf{Brooktec}}}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -68,7 +63,21 @@
 
   \section{summary}
 
-  I am a double bachelor's degree graduate in \textbf{Computer Engineering} and in \textbf{Statistics} from the University of Valladolid, in Spain. I love solving complex algorithmic problems, especially those related to \textbf{Combinatorial Optimization}. Also, I enjoy applying Mathematical and Statistical approaches to develop amazing solutions. 
+  \textbf{Software Development Engineer II at AWS} with a background as a \textbf{Dual Degree graduate in Computer Engineering and Statistics}. My career is driven by a genuine love for solving complex algorithmic problems, particularly in \textbf{Combinatorial Optimization} and \textbf{Operations Research}. At AWS, I transitioned to Cloud Computing, launching greenfield serverless products and building internal automation frameworks that drastically reduced regional expansion timelines from weeks to days. I am at my best when I can bridge the gap between theoretical math and industrial-grade software, whether that\'s solving \textbf{Vehicle Routing Problems} or architecting modular microservices grounded in \textbf{Domain-Driven Design}.
+
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	SKILLS SECTION
+%-------------------------------------------------------------------------------
+
+  \section{skills}
+
+      \begin{itemize}
+        \item \textbf{Languages:} Kotlin, Python, TypeScript, R, Java.
+        \item \textbf{Cloud \& DevOps:} AWS (Lambda, CDK, DynamoDB, Step Functions), Docker, Git, CI/CD.
+        \item \textbf{Math \& Data:} Combinatorial Optimization, VRP, Generalized Linear Models, Deep Learning.
+      \end{itemize}
 
 %-------------------------------------------------------------------------------
 
@@ -81,25 +90,26 @@
     \begin{entrylist}
 
       \entry
-      {2022/07 -- present}
+      {2024/12 -- present}
       {Software Development Engineer II}
       {\AWS}
       {
         \begin{itemize}
-          \item Team: AWS - Auto \& Industrial Solutions
+          \item \textbf{Team:} AWS - Applied AI Solutions - Autonomous Operations
+          \item \textbf{Building} a Region Build Automation (RBA) framework with AWS CDK on top of Amazon internal tooling. \textbf{Drastically reduced} the effort to expand AWS Services to new regions from weeks to days by \textbf{leveraging cross-account resource referencing}.
         \end{itemize}
       }
 
       \entry
-      {}
+      {2022/07 -- 2024/11}
       {Software Development Engineer I}
-      {}
+      {\AWS}
       {
         \begin{itemize}
-          \item Team: AWS - Industry Products - Automotive
-          \item Build greenfield AWS service for automotive customers using serverless architecture (Lambda, Step Functions, DynamoDB, S3, ECS, etc.).
-          \item Develop full-stack solution with Kotlin, Python and TypeScript languages, and AWS CDK for Infrastructure as Code
-        \item Deliver end-to-end service from concept to implementation, designed for automotive industry use cases at scale.
+          \item \textbf{Team:} AWS - Industry Products - Automotive
+          \item \textbf{Architected and launched} a greenfield serverless SaaS product tailored for the automotive industry, leveraging Lambda, Step Functions, and DynamoDB.
+          \item \textbf{Engineered} scalable full-stack solutions using Kotlin, Python, and TypeScript, utilizing AWS CDK to enforce rigorous Infrastructure as Code standards.
+          \item \textbf{Owned the full product lifecycle} from concept to implementation, delivering a high-scale service optimized for complex automotive use cases.
         \end{itemize}
       }
 
@@ -109,30 +119,30 @@
       {\Clariteia}
       {
         \begin{itemize}
-          \item Build a Microservices Framework, heavily inspired by the Domain-Driven Design ideas, known as the \Minos.
+          \item \textbf{Developed \Minos}, a custom Microservices Framework grounded in Domain-Driven Design (DDD) principles, establishing the core infrastructure for modular application development.
         \end{itemize}
       }
 
       \entry
-      {2018/06 -- 2021/04}
+      {2018/09 -- 2021/04}
       {Data Scientist}
       {\Unlimiteck}
       {
         \begin{itemize}
-          \item Build a fully Autonomous and Unsupervised Testing System based on scraping and intelligent navigation from the ground, being able to detect almost all interface changes and schedule navigation paths towards more susceptible bug areas.
-          \item Design and Develop a remote computing protocol, currently used by the company as the standard data sharing strategy.
-          \item Propose, define and assist in the implantation of a Python + VCS packaging strategy around the company, firstly over Subversion and currently over Git
-          \item Take part in a Car Damage Detection system based on image analysis mostly approached with Deep Learning strategies.
+          \item \textbf{Built an autonomous, unsupervised testing system} capable of intelligent navigation and scraping to proactively detect UI changes and predict bug-susceptible areas.
+          \item \textbf{Designed a proprietary remote computing protocol} that was adopted as the company's standard strategy for secure data sharing.
+          \item \textbf{Spearheaded the standardization} of Python development workflows by implementing a VCS-based packaging strategy, leading the migration from Subversion to Git.
+          \item \textbf{Implemented Deep Learning strategies} for a Car Damage Detection system, focusing on advanced image analysis.
         \end{itemize}
       }
 
       \entry
-      {}
+      {2018/06 -- 2018/08}
       {Data Scientist Intern}
-      {}
+      {\Unlimiteck}
       {
         \begin{itemize}
-          \item Design and develop a fully functional Vehicle Routing solving suite achieving results equivalent to another commercial alternatives, with an easy-to-use and extensible to client requirements design.
+          \item \textbf{Developed a comprehensive Vehicle Routing solving suite} that achieved performance benchmarks equivalent to leading commercial alternatives while offering superior extensibility.
         \end{itemize}
       }
 
@@ -142,7 +152,7 @@
       {\UVa}
       {
         \begin{itemize}
-          \item Develop an ETL pipeline fully written in R which helped a Research Group in the task of knowing what vehicle's internal parts have been damaged, given many metrics from the external ones.
+          \item \textbf{Engineered an R-based ETL pipeline} to correlate external vehicle metrics with internal component damage, streamlining data analysis for the research group.
         \end{itemize}
       }
 
@@ -152,7 +162,7 @@
       {\Brooktec}
       {
         \begin{itemize}
-          \item Develop a song polling plugin for WordPress.
+          \item Developed a song polling plugin for WordPress.
         \end{itemize}
       }
 
@@ -170,27 +180,26 @@
 
   \entry
   {2017/09 -- 2020/09}
-  {\myhref{http://www.eio.uva.es/}{BSc. Statistics}, 7.925/10.0}
+  {\myhref{https://www.eio.uva.es/}{BSc. Statistics}, 7.925/10.0}
   {\UVa}
   {
     
     \begin{itemize}
-        \item Enforce algorithmic skills mostly on operations research subjects, analyzing combinatorial optimization problems especially those related with Vehicle Routing Problems (VRPs).
-      \item Enrich mathematical knowledge mostly on calculus and theoretical statistics related subjects.
-      \item Thesis title: Scalable solving methods for the Dial-a-Ride Problem.
-      \item High marks: \myhref{https://www.inf.uva.es/wp-content/uploads/2016/06/G46959.pdf}{Operation Research Models} (Hons), \myhref{https://alojamientos.uva.es/guia_docente/uploads/2017/549/47089/1/Documento.pdf}{Statistical Computing}, \myhref{https://alojamientos.uva.es/guia_docente/uploads/2018/549/47102/1/Documento.pdf}{Categorical Data Analysis}.
+      \item \textbf{Specialized in Operations Research,} analyzing combinatorial optimization problems with a focus on Vehicle Routing Problems (VRPs).
+      \item \textbf{Thesis:} Scalable solving methods for the Dial-a-Ride Problem.
+      \item \textbf{High marks:} \myhref{https://www.inf.uva.es/wp-content/uploads/2016/06/G46959.pdf}{Operation Research Models} (Hons), \myhref{https://alojamientos.uva.es/guia_docente/uploads/2017/549/47089/1/Documento.pdf}{Statistical Computing}, \myhref{https://alojamientos.uva.es/guia_docente/uploads/2018/549/47102/1/Documento.pdf}{Categorical Data Analysis}.
     \end{itemize}
   }
 
   \entry
   {2019/01 -- 2019/07}
-  {\myhref{http://ems.unibo.it/en/}{Erasmus+, Statistics}, 28/30}
+  {\myhref{https://corsi.unibo.it/2cycle/StatisticsEconomicsBusiness/}{Erasmus+, Statistics}, 28/30}
   {\UNIBO}
   {
     \begin{itemize}
-      \item Abroad experience during 6 months on a foreign country and different language (classes taught in English).
-      \item Deep understanding of the Generalized Linear Model (GLM).
-      \item High marks on: \myhref{https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2019/423526}{Statistical Models and Applications}, \myhref{https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2018/423554}{Advanced Survival Analysis}.
+      \item \textbf{International Exchange Program:} Completed coursework in Advanced Statistics and Survival Analysis (conducted in English).
+      \item \textbf{Gained deep expertise} in Generalized Linear Models (GLM).
+      \item \textbf{High marks:} \myhref{https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2019/423526}{Statistical Models and Applications}, \myhref{https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2018/423554}{Advanced Survival Analysis}.
     \end{itemize}
   }
 
@@ -200,10 +209,9 @@
   {\UVa}
   {
     \begin{itemize}
-      \item Build a problem-solving mentality, focused mostly on the how-to-do and analysis of implications of the available approaches.
-      \item Interest for mostly algorithmic subjects, but also paying special attention to the ones related with software engineering topics.
-      \item Thesis title: Algorithms for Big Data: Graphs and PageRank.
-      \item High marks: \myhref{https://www.inf.uva.es/wp-content/uploads/2015/07/G46944.pdf}{Algorithms and Computing} (Hons), \myhref{https://www.inf.uva.es/wp-content/uploads/2015/07/G46948.pdf}{Codes and Cryptography} (Hons), \myhref{https://www.inf.uva.es/wp-content/uploads/2016/06/G46929.pdf}{Parallel Computing} (Hons), \myhref{https://www.inf.uva.es/wp-content/uploads/2014/07/G46915.pdf}{Operating Systems Structures} (Hons), \myhref{https://www.inf.uva.es/wp-content/uploads/2016/06/G46970.pdf}{Data Mining}, \myhref{https://www.inf.uva.es/wp-content/uploads/2016/06/G46932.pdf}{Machine Learning Techniques}, \myhref{https://www.inf.uva.es/wp-content/uploads/2015/07/G46931.pdf}{Web Services and Systems}, \myhref{https://www.inf.uva.es/wp-content/uploads/2012/07/C12-45187-RED.pdf}{Fundamentals of Computer Networks}.
+      \item \textbf{Specialized in Algorithms,} focusing on Advanced Algorithmic Design, Parallel Computing, and Software Engineering patterns.
+      \item \textbf{Thesis:} Algorithms for Big Data: Graphs and PageRank.
+      \item \textbf{High marks:} \myhref{https://www.inf.uva.es/wp-content/uploads/2015/07/G46944.pdf}{Algorithms and Computing} (Hons), \myhref{https://www.inf.uva.es/wp-content/uploads/2015/07/G46948.pdf}{Codes and Cryptography} (Hons), \myhref{https://www.inf.uva.es/wp-content/uploads/2016/06/G46929.pdf}{Parallel Computing} (Hons), \myhref{https://www.inf.uva.es/wp-content/uploads/2014/07/G46915.pdf}{Operating Systems Structures} (Hons), \myhref{https://www.inf.uva.es/wp-content/uploads/2016/06/G46970.pdf}{Data Mining}, \myhref{https://www.inf.uva.es/wp-content/uploads/2016/06/G46932.pdf}{Machine Learning Techniques}, \myhref{https://www.inf.uva.es/wp-content/uploads/2015/07/G46931.pdf}{Web Services and Systems}, \myhref{https://www.inf.uva.es/wp-content/uploads/2012/07/C12-45187-RED.pdf}{Fundamentals of Computer Networks}.
     \end{itemize}
   }
 
